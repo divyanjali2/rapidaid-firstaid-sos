@@ -49,7 +49,7 @@ class _SetupScreenState extends State<SetupScreen>
   }
 
   void _onContinueSetup() {
-    Navigator.pushReplacement(
+    Navigator.push(
       context,
       PageRouteBuilder(
         pageBuilder: (context, animation, secondaryAnimation) =>
@@ -178,7 +178,7 @@ class _SetupScreenState extends State<SetupScreen>
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF2EC4A5).withOpacity(0.3),
+            color: const Color(0xFF2EC4A5).withValues(alpha: 0.3),
             blurRadius: 16,
             offset: const Offset(0, 6),
           ),
@@ -221,14 +221,14 @@ class _SetupScreenState extends State<SetupScreen>
           boxShadow: isSelected
               ? [
                   BoxShadow(
-                    color: const Color(0xFF2EC4A5).withOpacity(0.08),
+                    color: const Color(0xFF2EC4A5).withValues(alpha: 0.08),
                     blurRadius: 12,
                     offset: const Offset(0, 4),
                   ),
                 ]
               : [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.04),
+                    color: Colors.grey.withValues(alpha: 0.04),
                     blurRadius: 8,
                     offset: const Offset(0, 2),
                   ),
