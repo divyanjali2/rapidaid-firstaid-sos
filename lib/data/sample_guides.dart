@@ -8,12 +8,11 @@ final List<Guide> sampleGuides = [
     icon: Icons.air,
     iconColor: const Color(0xFF2EC4A5),
     backgroundColor: const Color(0xFFF0FBF8),
+    warningText: 'If the person is unconscious, call 119 immediately and begin CPR.',
     steps: [
-      GuideStep(title: 'Step 1', content: 'Ask "Are you choking?" If they cannot speak, cough, or breathe, act immediately.'),
-      GuideStep(title: 'Step 2', content: 'Stand behind the person and lean them slightly forward.'),
-      GuideStep(title: 'Step 3', content: 'Give 5 sharp back blows between the shoulder blades with the heel of your hand.'),
-      GuideStep(title: 'Step 4', content: 'If that fails, give 5 abdominal thrusts (Heimlich maneuver).'),
-      GuideStep(title: 'Step 5', content: 'Repeat back blows and thrusts until the object is expelled or help arrives.'),
+      GuideStep(title: 'Step 1', content: 'Assess the situation. Ask clearly \'Are you choking?\' If the victim can speak or cough, do not interfere.\nEncourage them to cough to dislodge the object naturally.', imageUrl: 'assets/images/choking_step_1_1788196802292.jpg'),
+      GuideStep(title: 'Step 2', content: 'Give 5 back blows. Lean the victim forward and strike them firmly between the shoulder blades with the heel of your hand.\nUse a strong upward and forward motion.', imageUrl: 'assets/images/choking_step_2_1788196858801.jpg'),
+      GuideStep(title: 'Step 3', content: 'Give 5 abdominal thrusts (Heimlich Maneuver). Wrap your arms around their waist. Make a fist and press hard into the abdomen with quick, upward thrusts.\nRepeat cycles of 5 back blows and 5 abdominal thrusts until object is expelled.', imageUrl: 'assets/images/choking_step_3_1788196921665.jpg'),
     ],
   ),
   Guide(

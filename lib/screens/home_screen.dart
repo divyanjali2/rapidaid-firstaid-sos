@@ -183,7 +183,20 @@ class _HomeScreenState extends State<HomeScreen>
             ),
           ),
 
-          const SizedBox(width: 12),
+          const SizedBox(width: 10),
+
+          // ── App Logo ──
+          ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: Image.asset(
+              'assets/images/app_logo.jpg',
+              width: 36,
+              height: 36,
+              fit: BoxFit.cover,
+            ),
+          ),
+
+          const SizedBox(width: 10),
 
           // ── Title ──
           const Text(

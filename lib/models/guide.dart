@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 class GuideStep {
   final String title;
   final String content;
+  final String? imageUrl;
 
-  GuideStep({required this.title, required this.content});
+  GuideStep({required this.title, required this.content, this.imageUrl});
 }
 
 class Guide {
@@ -14,6 +15,7 @@ class Guide {
   final IconData icon;
   final Color iconColor;
   final Color backgroundColor;
+  final String? warningText;
 
   Guide({
     required this.id,
@@ -22,5 +24,6 @@ class Guide {
     this.icon = Icons.health_and_safety,
     this.iconColor = Colors.teal,
     this.backgroundColor = const Color(0xFFF0FBF8),
+    this.warningText,
   });
 }
