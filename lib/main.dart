@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'screens/setup_screen.dart';
 
 void main() {
   runApp(const RapidAidApp());
@@ -12,11 +12,13 @@ class RapidAidApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'RapidAid',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.teal,
         useMaterial3: true,
+        fontFamily: 'Roboto',
       ),
-      home: const HomeScreen(),
+      home: const SetupScreen(),
     );
   }
 }
