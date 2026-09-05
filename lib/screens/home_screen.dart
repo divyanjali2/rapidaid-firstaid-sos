@@ -426,9 +426,8 @@ class _HomeScreenState extends State<HomeScreen>
                     child: CircularProgressIndicator(
                       value: _sosProgress,
                       strokeWidth: 4,
-                      backgroundColor: const Color(0xFF1E3A8A),
-                      valueColor: AlwaysStoppedAnimation<Color>(
-                          const Color(0xFF1E3A8A)),
+                      backgroundColor: Colors.red.withValues(alpha: 0.2),
+                      valueColor: const AlwaysStoppedAnimation<Color>(Colors.red),
                     ),
                   ),
 
@@ -442,14 +441,14 @@ class _HomeScreenState extends State<HomeScreen>
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        const Color(0xFF1E3A8A),
-                        const Color(0xFF1E3A8A),
+                        Colors.red.shade400,
+                        Colors.red.shade700,
                       ],
                     ),
                     shape: BoxShape.circle,
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFF1E3A8A).withValues(alpha: 0.35),
+                        color: Colors.red.withValues(alpha: 0.35),
                         blurRadius: _isSosHolding ? 24 : 16,
                         offset: const Offset(0, 4),
                       ),
