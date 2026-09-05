@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen>
               Text('SOS Triggered! Calling emergency services...'),
             ],
           ),
-          backgroundColor: Colors.red.shade600,
+          backgroundColor: const Color(0xFF1E3A8A),
           behavior: SnackBarBehavior.floating,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -96,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF7F8FA),
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: FadeTransition(
           opacity: _fadeAnimation,
@@ -125,7 +125,7 @@ class _HomeScreenState extends State<HomeScreen>
                         style: TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.w700,
-                          color: Colors.grey.shade600,
+                          color: const Color(0xFF0F172A).withOpacity(0.6),
                           letterSpacing: 1.2,
                         ),
                       ),
@@ -169,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen>
                 borderRadius: BorderRadius.circular(12),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withValues(alpha: 0.08),
+                    color: const Color(0xFF0F172A).withOpacity(0.08),
                     blurRadius: 8,
                     offset: const Offset(0, 2),
                   ),
@@ -230,7 +230,7 @@ class _HomeScreenState extends State<HomeScreen>
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withValues(alpha: 0.08),
+            color: const Color(0xFF0F172A).withOpacity(0.08),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),
@@ -284,7 +284,7 @@ class _HomeScreenState extends State<HomeScreen>
                   style: TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.w400,
-                    color: Colors.grey.shade600,
+                    color: const Color(0xFF0F172A).withOpacity(0.6),
                     height: 1.4,
                   ),
                 ),
@@ -345,12 +345,12 @@ class _HomeScreenState extends State<HomeScreen>
           color: Colors.white,
           borderRadius: BorderRadius.circular(18),
           border: Border.all(
-            color: Colors.grey.shade100,
+            color: Colors.white,
             width: 1,
           ),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withValues(alpha: 0.05),
+              color: const Color(0xFF0F172A).withOpacity(0.05),
               blurRadius: 10,
               offset: const Offset(0, 3),
             ),
@@ -406,7 +406,7 @@ class _HomeScreenState extends State<HomeScreen>
                 SnackBar(
                   content:
                       const Text('Hold for 3 seconds to trigger SOS'),
-                  backgroundColor: Colors.orange.shade600,
+                  backgroundColor: const Color(0xFF1E3A8A),
                   behavior: SnackBarBehavior.floating,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12)),
@@ -426,9 +426,9 @@ class _HomeScreenState extends State<HomeScreen>
                     child: CircularProgressIndicator(
                       value: _sosProgress,
                       strokeWidth: 4,
-                      backgroundColor: Colors.red.shade100,
+                      backgroundColor: const Color(0xFF1E3A8A),
                       valueColor: AlwaysStoppedAnimation<Color>(
-                          Colors.red.shade600),
+                          const Color(0xFF1E3A8A)),
                     ),
                   ),
 
@@ -442,14 +442,14 @@ class _HomeScreenState extends State<HomeScreen>
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Colors.red.shade400,
-                        Colors.red.shade700,
+                        const Color(0xFF1E3A8A),
+                        const Color(0xFF1E3A8A),
                       ],
                     ),
                     shape: BoxShape.circle,
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.red.withValues(alpha: 0.35),
+                        color: const Color(0xFF1E3A8A).withValues(alpha: 0.35),
                         blurRadius: _isSosHolding ? 24 : 16,
                         offset: const Offset(0, 4),
                       ),
@@ -479,7 +479,7 @@ class _HomeScreenState extends State<HomeScreen>
             style: TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w500,
-              color: Colors.red.shade400,
+              color: const Color(0xFF1E3A8A),
             ),
           ),
         ],
