@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../data/sample_guides.dart';
 import '../models/guide.dart';
 import 'guide_detail_screen.dart';
+import 'medical_id_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -215,31 +216,44 @@ class _HomeScreenState extends State<HomeScreen>
           const SizedBox(width: 10),
           _buildActionIcon(Icons.phone_rounded),
           const SizedBox(width: 10),
-          _buildActionIcon(Icons.person_outline_rounded),
+          _buildActionIcon(
+            Icons.person_outline_rounded,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const MedicalIdScreen(),
+                ),
+              );
+            },
+          ),
         ],
       ),
     );
   }
 
-  Widget _buildActionIcon(IconData icon) {
-    return Container(
-      width: 38,
-      height: 38,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
-        boxShadow: [
-          BoxShadow(
-            color: const Color(0xFF0F172A).withOpacity(0.08),
-            blurRadius: 8,
-            offset: const Offset(0, 2),
-          ),
-        ],
-      ),
-      child: Icon(
-        icon,
-        size: 20,
-        color: const Color(0xFF4A4A5A),
+  Widget _buildActionIcon(IconData icon, {VoidCallback? onTap}) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: 38,
+        height: 38,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: [
+            BoxShadow(
+              color: const Color(0xFF0F172A).withOpacity(0.08),
+              blurRadius: 8,
+              offset: const Offset(0, 2),
+            ),
+          ],
+        ),
+        child: Icon(
+          icon,
+          size: 20,
+          color: const Color(0xFF4A4A5A),
+        ),
       ),
     );
   }
