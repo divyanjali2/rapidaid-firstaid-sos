@@ -170,7 +170,7 @@ class _SetupScreenState extends State<SetupScreen>
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF2EC4A5).withValues(alpha: 0.3),
+            color: const Color(0xFF0F172A).withValues(alpha: 0.3),
             blurRadius: 16,
             offset: const Offset(0, 6),
           ),
@@ -203,19 +203,19 @@ class _SetupScreenState extends State<SetupScreen>
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
         decoration: BoxDecoration(
           color: isSelected
-              ? const Color(0xFFF0FBF8)
+              ? const Color(0xFFE2E8F0)
               : Colors.white,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
             color: isSelected
-                ? const Color(0xFF2EC4A5)
+                ? const Color(0xFF0F172A)
                 : Colors.grey.shade200,
             width: isSelected ? 2.0 : 1.0,
           ),
           boxShadow: isSelected
               ? [
                   BoxShadow(
-                    color: const Color(0xFF2EC4A5).withValues(alpha: 0.08),
+                    color: const Color(0xFF0F172A).withValues(alpha: 0.08),
                     blurRadius: 12,
                     offset: const Offset(0, 4),
                   ),
@@ -264,7 +264,7 @@ class _SetupScreenState extends State<SetupScreen>
                 width: 28,
                 height: 28,
                 decoration: const BoxDecoration(
-                  color: Color(0xFF2EC4A5),
+                  color: Color(0xFF0F172A),
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(
@@ -293,7 +293,7 @@ class _SetupScreenState extends State<SetupScreen>
       child: ElevatedButton(
         onPressed: _onContinueSetup,
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFF2EC4A5),
+          backgroundColor: const Color(0xFF0F172A),
           foregroundColor: Colors.white,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),

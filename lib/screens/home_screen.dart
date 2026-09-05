@@ -260,7 +260,7 @@ class _HomeScreenState extends State<HomeScreen>
         ),
         borderRadius: BorderRadius.circular(18),
         border: Border.all(
-          color: const Color(0xFF2EC4A5).withValues(alpha: 0.2),
+          color: const Color(0xFF0F172A).withValues(alpha: 0.2),
           width: 1,
         ),
       ),
@@ -296,12 +296,12 @@ class _HomeScreenState extends State<HomeScreen>
             width: 48,
             height: 48,
             decoration: BoxDecoration(
-              color: const Color(0xFF2EC4A5).withValues(alpha: 0.15),
+              color: const Color(0xFF0F172A).withValues(alpha: 0.15),
               borderRadius: BorderRadius.circular(14),
             ),
             child: const Icon(
               Icons.menu_book_rounded,
-              color: Color(0xFF2EC4A5),
+              color: Color(0xFF0F172A),
               size: 26,
             ),
           ),

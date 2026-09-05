@@ -6,8 +6,8 @@ final List<Guide> sampleGuides = [
     id: 'choking',
     title: 'Choking',
     icon: Icons.air,
-    iconColor: const Color(0xFF2EC4A5),
-    backgroundColor: const Color(0xFFF0FBF8),
+    iconColor: const Color(0xFF0F172A),
+    backgroundColor: const Color(0xFFE2E8F0),
     warningText: 'If the person is unconscious, call 119 immediately and begin CPR.',
     steps: [
       GuideStep(title: 'Step 1', content: 'Assess the situation. Ask clearly \'Are you choking?\' If the victim can speak or cough, do not interfere.\nEncourage them to cough to dislodge the object naturally.', imageUrl: 'assets/images/choking_step_1_1788196802292.jpg'),
